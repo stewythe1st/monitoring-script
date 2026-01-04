@@ -1,0 +1,12 @@
+services:
+  monitoring:
+    restart: unless-stopped
+    image: stewythe1st/monitoring-script:v0.0.x
+    network_mode: host
+    environment:
+      - SERVERS=...
+      - SENDER_ADDRESS=stewythe1st@gmail.com
+      - SENDER_PASSWORD=...
+      - RECIPIENTS=stewythe1st@gmail.com
+    ports: []
+networks: {}
